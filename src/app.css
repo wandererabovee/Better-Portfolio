@@ -1,0 +1,33 @@
+/* Global site styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e3b5a;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    opacity: 0.8;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  }
+

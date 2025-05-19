@@ -1,0 +1,18 @@
+{
+    "home": {
+      "title": "Hey, I'm Mike",
+      "subtitle": "A hobbyist dev building cool stuff",
+      "image": "/my-face.png"
+    },
+    "blog": {
+      "title": "My Blog",
+      "subtitle": "Writing down what I learn",
+      "image": "/my-blog.png"
+    },
+    "projects": {
+      "title": "My Projects",
+      "subtitle": "Some things I’ve built for fun and growth",
+      "image": "/my-project.png"
+    }
+  }
+  

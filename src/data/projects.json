@@ -1,0 +1,35 @@
+[
+    {
+      "title": "Personal Portfolio",
+      "description": "My little land of the web",
+      "date": "2024-04-01",
+      "topic": "Personal",
+      "articleUrl": "/blog/personal-portfolio",
+      "demoUrl": "https://wandererabovee.dev"
+    },
+    {
+      "title": "Weather Tracker",
+      "description": "A modern UI to get live weather updates.",
+      "date": "2024-03-15",
+      "topic": "API",
+      "articleUrl": "/blog/weather-tracker",
+      "demoUrl": "https://weather.com"
+    },
+    {
+      "title": "Mock Storefront",
+      "description": "A storefront design inspired by Amazon.",
+      "date": "2024-02-25",
+      "topic": "E-commerce",
+      "articleUrl": "/blog/storefront",
+      "demoUrl": "https://amazon.com"
+    },
+    {
+      "title": "Search Engine UI",
+      "description": "Minimalist UI inspired by Google.",
+      "date": "2024-01-10",
+      "topic": "Design",
+      "articleUrl": "/blog/search-ui",
+      "demoUrl": "https://google.com"
+    }
+  ]
+  

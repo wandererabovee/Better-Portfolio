@@ -36,7 +36,7 @@
   .nav-right a {
     margin: 0 0.5rem;
     padding: 0.5rem 1rem;
-    border: 2px solid #2a4f6d;
+    border: 2px solid var(--color-primary);
     border-radius: 8px;
     color: white;
     text-decoration: none;

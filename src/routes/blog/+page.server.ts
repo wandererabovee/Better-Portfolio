@@ -1,27 +1,16 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+import { readPosts } from '../../lib/utils/readPosts';
 import headers from '../../data/headers.json';
-import type { PageServerLoad } from './$types';
 
-const postsDir = 'src/content/posts';
+export async function load() {
+  const posts = await readPosts();
 
-export const load: PageServerLoad = () => {
-  const files = fs.readdirSync(postsDir);
-
-  const posts = files.map((file: string) => {
-    const content = fs.readFileSync(path.join(postsDir, file), 'utf-8');
-    const { data } = matter(content);
-    const slug = file.replace('.md', '');
-    return {
-      title: data.title,
-      date: data.date,
-      slug
-    };
-  });
+  const topics = Array.from(
+    new Set(posts.flatMap(post => post.topics ?? []))
+  );
 
   return {
     hero: headers.blog,
-    posts
+    posts,
+    topics
   };
-};
+}

@@ -21,7 +21,7 @@
   .page-hero {
     background-color: #1e3b5a;
     color: white;
-    padding: 4rem 2rem;
+    padding: 0rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,12 +33,15 @@
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-top:3rem;
+    margin-bottom:3rem;
     width: 100%;
   }
 
   .text {
     text-align: center;
+    padding-left: 5rem;
+
   }
 
   h1 {
@@ -53,6 +56,6 @@
   img {
     width: 150px;
     height: 150px;
-    border-radius: 8px;
+    padding-right: 5rem;
   }
 </style>

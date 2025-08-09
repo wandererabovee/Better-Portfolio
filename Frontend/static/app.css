@@ -1,0 +1,148 @@
+:root {
+  --color-primary: #1e3b5a;
+  --color-secondary: #0b2a3a;
+  --color-tertiary: #2a4f6d;
+
+  --color-accent: gold;
+  --color-accent-light: #f5d479;
+
+  --color-text: #ffffff;
+  --color-muted: #cccccc;
+  --color-dark: #0b1a25;
+}
+
+/* Base reset */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Blog list styling */
+.blog-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: none; /* removed line */
+}
+
+.blog-title {
+  font-size: 1rem;
+}
+
+.blog-date {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+}
+
+/* Project cards */
+.project-cards {
+  display: grid;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  padding-top: 1rem;
+}
+
+.card {
+  width: auto;
+  max-width: none;
+  height: 250px;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Topic filter */
+.topic-box {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.topic-box button {
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Global section/component spacing */
+section,
+.component-block {
+  margin-bottom: 2rem; /* Adjust as needed */
+}
+
+/* Add space between sibling sections */
+section + section {
+  margin-bottom: 2rem; /* Adjust to make more or less space */
+}
+
